@@ -28,12 +28,7 @@ Dự án này cung cấp một tập lệnh để tự động cài đặt `frpc
 ## 🛠️ Hướng dẫn Cài đặt
 
 ### Bước 1: Chuẩn bị các Tệp
-Nếu bạn vừa giải nén `frp` từ tệp `.tar.gz`, tệp thực thi `frpc` sẽ nằm trong một thư mục con. Hãy di chuyển nó ra ngoài thư mục gốc của dự án.
-
-```bash
-# Lệnh này di chuyển tệp frpc ra thư mục hiện tại
-mv frp_*/frpc .
-```
+Tải file `frpc_package.tar.gz` về và giải nén.
 Sau bước này, bạn sẽ có các tệp `frpc`, `frpc.yaml`, `install_service.sh` nằm cạnh nhau.
 
 ### Bước 2: Cấp quyền Thực thi cho Tập lệnh
