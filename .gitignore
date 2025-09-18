@@ -1,0 +1,9 @@
+# Ignore the log directory
+logs/
+
+# Ignore the downloaded frp tarball and extracted directory
+frp_*.tar.gz
+frp_*/
+
+# Ignore packaged tarball
+frpc_package.tar.gz

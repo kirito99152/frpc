@@ -1,0 +1,25 @@
+serverAddr: 160.191.50.208         # IP public của VPS
+serverPort: 7000
+loginFailExit: false               # retry liên tục nếu login fail
+
+auth:                              # xác thực client → server
+  method: token
+  token: dult3RFTPYfQKtSBaIgAwdqYcEQOo9BAyjgEIuTfXM1K83IEwzkAqaVrMuex72P2
+
+log:                               # cấu hình log theo schema mới
+  to: ./logs/frpc.log
+  level: info
+  maxDays: 7
+
+proxies:
+  - name: ssh_lab306_dong-cds
+    type: tcp
+    localIP: 127.0.0.1
+    localPort: 22               # RDP của Windows
+    remotePort: 6001             # cổng public trên VPS
+  # Proxy cho Web (chưa bật, chỉ là ví dụ)
+  # - name: win_web
+  #   type: tcp
+  #   localIP: 127.0.0.1
+  #   localPort: 80              # Web IIS/Apache/Nginx chạy local
+  #   remotePort: 18080          # Publish qua VPS:18080
